@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/bootstrap.min.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <div class="collapse navbar-collapse" id="navbarColor02">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a c lass="av-link" href="/" style="padding-left: 20px">Главная
+
+                </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+<h1 style="text-align: center; color: purple;">Hello world {{ name }}</h1><br>
+
+<p style="padding-left: 100px; color: purple;"><b><font size="10">Ты кто?</font></b></p><Br>
+
+<form action="/" method="POST" style="padding-left: 100px;">
+    <p><textarea name="text_for_trans" id="translate"></textarea><textarea> {{ text_after_trans }}</textarea><Br>
+    <input type="submit" value="Translate">
+    </p>
+</form>
+
+</body>
+</html>
