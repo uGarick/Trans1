@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse" id="navbarColor02">
         <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-                <a c lass="av-link" href="/" style="padding-left: 20px">Главная
+                <a class="av-link" href="/" style="padding-left: 20px">Главная
 
                 </a>
             </li>
@@ -19,13 +19,15 @@
 </nav>
 
 
-<h1 style="text-align: center; color: purple;">Hello world {{ name }}</h1><br>
-
-<p style="padding-left: 100px; color: purple;"><b><font size="10">Ты кто?</font></b></p><Br>
+<h1 style="text-align: right; color: purple; padding-right: 35px">Hello world {{ name }}</h1><br>
 
 <form action="/" method="POST" style="padding-left: 100px;">
-    <p><textarea name="text_for_trans" id="translate"></textarea><textarea> {{ text_after_trans }}</textarea><Br>
-    <input type="submit" value="Translate">
+    <p style="text-align: center"><b style="color: white;"><font size="4">Введите текст для перевода на русский</font></b><br>
+        <textarea name="text_for_transToRu" id="translateToRu"></textarea><textarea> {{ text_after_transToRu }}</textarea><Br>
+    </p>
+    <p style="text-align: center"><b style="color: white;"><font size="4">Введите текст для перевода на английский</font></b><br>
+        <textarea name="text_for_transToEn" id="translateToEn"></textarea><textarea> {{ text_after_transToEn }}</textarea><Br>
+    <input type="submit" value="Перевести">
     </p>
 </form>
 
